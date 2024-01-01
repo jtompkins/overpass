@@ -21,12 +21,16 @@ export default async function Home() {
   };
 
   return user ? (
-    <div className="flex items-center gap-4">
-      Hey, {user.email}!
-      <form action={signOut}>
-        <button>Logout</button>
-      </form>
-    </div>
+    <>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+
+      <div className="flex items-center gap-4">
+        Hey, {user.email}!
+        <form action={signOut}>
+          <button>Logout</button>
+        </form>
+      </div>
+    </>
   ) : (
     <Link href="/login">Login</Link>
   );
