@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <main>
-      <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} providers={[]} theme="dark" />
+      <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} providers={[]} />
     </main>
   );
 };
