@@ -22,6 +22,8 @@ func main() {
 
 	err := builder.BuildEbook(targets)
 
+	// err := builder.BuildEbook(targets)
+
 	if err != nil {
 		log.Fatal().Err(err)
 	}
